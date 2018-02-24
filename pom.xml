@@ -52,13 +52,13 @@
         <version>7.2.2.0</version>
     </parent>
     <artifactId>securitytxt</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia security.txt</name>
     <description>These are the custom module (Jahia security.txt) for running on a Jahia server.</description>
     <scm>
-        <connection>scm:git:git@github.com:Jahia/securitytxt.git</connection>
-        <developerConnection>scm:git:git@github.com:Jahia/securitytxt.git</developerConnection>
+        <connection>scm:git:git@github.com:Erenthil/securitytxt.git</connection>
+        <developerConnection>scm:git:git@github.com:Erenthil/securitytxt.git</developerConnection>
         <url>scm:git:git@github.com:Erenthil/securitytxt.git</url>
         <tag>HEAD</tag>
     </scm>
