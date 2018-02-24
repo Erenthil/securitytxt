@@ -1,0 +1,14 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+
+[jnt:securitytxt] > jnt:content, jmix:autoPublish
+ - contact (string)
+ - encryption (weakreference)
+ - acknowledgements (weakreference)
+ - policy (weakreference)
+ - signature (weakreference)
+
+//---------------------------------------------------------
+// Security.txt Administration
+//---------------------------------------------------------
+
+[jnt:siteSettingsManageSecurityTxt] > jnt:content, mix:title, jmix:studioOnly, jmix:siteComponent
