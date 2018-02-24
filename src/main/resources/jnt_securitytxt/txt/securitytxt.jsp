@@ -22,7 +22,7 @@
 <%--@elvariable id="flowExecutionUrl" type="java.lang.String"--%>
 <%--@elvariable id="issueTemplate" type="org.jahia.services.content.JCRNodeWrapper"--%>
 <%--@elvariable id="issue" type="org.jahia.services.content.JCRNodeWrapper"--%>
-
+<c:set target="${renderContext}" property="contentType" value="text/plain;charset=UTF-8"/>
 <c:if test="${currentNode.properties['contact'] ne ''}">
 Contact: ${currentNode.properties['contact']}
 </c:if>
