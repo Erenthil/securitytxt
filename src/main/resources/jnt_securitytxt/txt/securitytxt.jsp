@@ -1,6 +1,3 @@
-<%@ page language="java" contentType="text;charset=UTF-8" %>
-<%@ page import="org.jahia.registries.ServicesRegistry"%>
-<%@ page import="org.jahia.services.templates.JahiaTemplateManagerService"%>
 <%@ taglib prefix="template" uri="http://www.jahia.org/tags/templateLib" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
@@ -28,19 +25,19 @@ Contact: ${currentNode.properties['contact']}
 </c:if>
 
 <c:if test="${currentNode.properties['encryption'] ne ''}">
-Encryption: <c:url value="${currentNode.properties['encryption'].node.url}"/>
+Encryption: ${url.server}<c:url value="${currentNode.properties['encryption'].node.url}"/>
 </c:if>
 
 <c:if test="${currentNode.properties['acknowledgements'] ne ''}">
-Acknowledgements: <c:url value="${currentNode.properties['acknowledgements'].node.url}"/>
+Acknowledgements: ${url.server}<c:url value="${currentNode.properties['acknowledgements'].node.url}"/>
 </c:if>
 
 <c:if test="${currentNode.properties['policy'] ne ''}">
-Policy: <c:url value="${currentNode.properties['policy'].node.url}"/>
+Policy: ${url.server}<c:url value="${currentNode.properties['policy'].node.url}"/>
 </c:if>
 
 <c:if test="${currentNode.properties['signature'] ne ''}">
-Signature: /.well-known/security.txt.sig
+Signature: ${url.server}/.well-known/security.txt.sig
 </c:if>
 
 
