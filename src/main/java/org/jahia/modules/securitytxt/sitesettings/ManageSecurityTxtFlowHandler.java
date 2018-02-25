@@ -135,15 +135,13 @@ public class ManageSecurityTxtFlowHandler implements Serializable {
         try {
             siteFiles = site.getNode(relPath);
             final JSONObject jSONObject = new JSONObject();
-            try {
-                jSONObject.accumulate("path", escape(siteFiles.getPath()));
-                jSONObject.accumulate("UUID", siteFiles.getIdentifier());
-            } catch (JSONException ex) {
-                LOGGER.error("Impossible to create json object", ex);
-            }
+            jSONObject.accumulate("path", escape(siteFiles.getPath()));
+            jSONObject.accumulate("UUID", siteFiles.getIdentifier());
             folders.put(jSONObject);
         } catch (RepositoryException e) {
             // no files under the site
+        } catch (JSONException ex) {
+            LOGGER.error("Impossible to create json object", ex);
         }
         if (siteFiles != null) {
             final StringBuilder filter = new StringBuilder("isdescendantnode(f,['").append(JCRContentUtils.sqlEncode(siteFiles.getPath())).append("'])");

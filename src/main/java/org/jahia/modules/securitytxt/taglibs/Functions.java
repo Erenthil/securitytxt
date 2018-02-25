@@ -14,6 +14,9 @@ public class Functions {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Functions.class);
 
+    private Functions() {
+    }
+
     public static boolean downloadBinaryContent(RenderContext renderContext, JCRNodeWrapper nodeToDownload) {
         try (OutputStream outputStream = renderContext.getResponse().getOutputStream()) {
             if (nodeToDownload.hasNode("jcr:content")) {
@@ -35,5 +38,5 @@ public class Functions {
             return Boolean.FALSE;
         }
         return Boolean.TRUE;
-    } 
+    }
 }
