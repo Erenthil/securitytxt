@@ -9,8 +9,8 @@
     <artifactId>securitytxt</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <packaging>bundle</packaging>
-    <name>Jahia security.txt</name>
-    <description>These are the custom module (Jahia security.txt) for running on a Jahia server.</description>
+    <name>security.txt</name>
+    <description>The purpose of this module is to ease the generation of the file security.txt inside Digital Experience Manager. For more information about security.txt, please refer to this URL: https://securitytxt.org/</description>
     <scm>
         <connection>scm:git:git@github.com:Erenthil/securitytxt.git</connection>
         <developerConnection>scm:git:git@github.com:Erenthil/securitytxt.git</developerConnection>
