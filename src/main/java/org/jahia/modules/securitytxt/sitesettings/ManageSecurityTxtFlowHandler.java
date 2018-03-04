@@ -37,6 +37,7 @@ public class ManageSecurityTxtFlowHandler implements Serializable {
             securityNode = currentSite.getNode(SECURITY_TXT);
         } else {
             securityNode = currentSite.addNode(SECURITY_TXT, SECURITY_TXT_NODE_TYPE);
+            currentSite.getSession().save();
         }
         return securityNode;
     }
