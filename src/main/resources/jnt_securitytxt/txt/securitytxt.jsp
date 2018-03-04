@@ -39,8 +39,5 @@ Policy: ${url.server}<c:url value="${currentNode.properties['policy'].node.url}"
 <c:if test="${currentNode.properties['signature'] ne ''}">
 Signature: ${url.server}/.well-known/security.txt.sig
 </c:if>
-
-
- 
- 
- 
+    
+<c:if test="${currentNode.properties['hiring'] ne ''}">Hiring: ${url.server}<c:url value="${currentNode.properties['hiring'].node.url}"/></c:if>

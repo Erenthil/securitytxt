@@ -136,6 +136,13 @@
                                 <jsp:include page="/modules/securitytxt/angular/dataPicker.jsp"/>
                         </div>
                     </div>
+                    <div class="row-fluid">
+                        <c:set var="securityTxtHiring" value="${securityTxt.properties['hiring']}"/>
+                        <div class="span4" ng-controller="dataPickerCtrl" ng-init='init(${localPages}, "${fn:escapeXml(securityTxtHiring)}", "hiring", true, "${i18NSelectTarget}")'>
+                            <label for="securityTxtHiring"><fmt:message key="label.hiring"/>: <span class="text-error"></span></label>
+                                <jsp:include page="/modules/securitytxt/angular/dataPicker.jsp"/>
+                        </div>
+                    </div>
                 </div>
             </fieldset>
 
