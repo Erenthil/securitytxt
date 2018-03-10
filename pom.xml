@@ -7,7 +7,7 @@
         <version>7.2.2.0</version>
     </parent>
     <artifactId>securitytxt</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>security.txt</name>
     <description>The purpose of this module is to ease the generation of the file security.txt inside Digital Experience Manager. For more information about security.txt, please refer to this URL: https://securitytxt.org/</description>
@@ -15,7 +15,7 @@
         <connection>scm:git:git@github.com:Erenthil/securitytxt.git</connection>
         <developerConnection>scm:git:git@github.com:Erenthil/securitytxt.git</developerConnection>
         <url>scm:git:git@github.com:Erenthil/securitytxt.git</url>
-        <tag>1.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
     <properties>
         <jahia-depends>default,siteSettings</jahia-depends>
